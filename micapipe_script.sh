@@ -31,11 +31,10 @@ for subjName in sub-080 sub-090 sub-100 sub-110 sub-120 ; do
 		-ses ses-01 \
 		-proc_structural \
 		-post_structural \
-		_dwi \
+		-proc_dwi \
 		-dwi_main /bids/${subjName}/ses-01/dwi/${subjName}_dir-AP_dwi.nii.gz \
 		-dwi_rpe /bids/${subjName}/ses-01/dwi/${subjName}_dir-PA_dwi.nii.gz \
 		-SC \
-		-tracts 20M \
 		-regAffine \
 		-GD \
 		-Morphology \
